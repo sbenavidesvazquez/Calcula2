@@ -6,6 +6,7 @@
 
 package calculadora2;
 
+import static calculadora2.Vista.imprimir;
 import javax.swing.JOptionPane;
 
 /**
@@ -34,7 +35,11 @@ public class Calculadora2 {
                 + "división /\n");
         obx.setOperacion(op);
         
+        float res=realizaOperacion(obx.getNum1(),obx.getNum2(),obx.getOperacion());
+        obx.setResultado(res);
         
+        
+        imprimir(res);
         
     }
     
