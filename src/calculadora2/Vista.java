@@ -6,6 +6,8 @@
 
 package calculadora2;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author sbenavidesvazquez
@@ -13,7 +15,7 @@ package calculadora2;
 public class Vista {
     
     public static void imprimir(float resultado){
-        
+        JOptionPane.showMessageDialog(null, "El resultado es= "+resultado);
     }
     
 }
