@@ -29,10 +29,10 @@ public class Calculadora2 {
         contenedor.setNum2(n2);
         
         String op=JOptionPane.showInputDialog("Escoge la operacion\n "
-                + "suma +\n"
-                + "resta -\n"
-                + "multiplicación *\n"
-                + "división /\n");
+                + "suma--> 0\n"
+                + "resta--> 1\n"
+                + "multiplicación--> 2\n"
+                + "división--> 3\n");
         contenedor.setOperacion(op);
         
         float res=realizaOperacion(contenedor.getNum1(),contenedor.getNum2(),contenedor.getOperacion());
@@ -44,15 +44,16 @@ public class Calculadora2 {
     
     public static float realizaOperacion(float n1,float n2,String op){
 
+        
         float resultado=0;
         switch(op){
-            case "+":resultado=(n1+n2);
+            case "0":resultado=(n1+n2);
                 break;
-            case "-": resultado=(n1-n2);
+            case "1": resultado=(n1-n2);
                 break;
-            case "*": resultado=(n1*n2);
-                break;
-            case "/": resultado=(n1/n2);
+            case "2": resultado=(n1*n2);
+                break;                
+            case "3": resultado=(n1/n2);
                 break;
         }
         return resultado;
