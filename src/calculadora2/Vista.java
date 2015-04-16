@@ -14,8 +14,8 @@ import javax.swing.JOptionPane;
  */
 public class Vista {
     
-    public static void imprimir(float resultado){
-        JOptionPane.showMessageDialog(null, "El resultado es= "+resultado);
+    public static void imprimir(Modelo res){
+        JOptionPane.showMessageDialog(null, res.num1+""+res.operacion+""+res.num2+" = "+res.resultado);
     }
     
 }

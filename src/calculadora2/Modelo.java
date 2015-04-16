@@ -15,6 +15,16 @@ public class Modelo {
     float num1, num2, resultado;
     String operacion;
 
+    public Modelo() {
+    }
+
+    public Modelo(float num1, float num2, float resultado, String operacion) {
+        this.num1 = num1;
+        this.num2 = num2;
+        this.resultado = resultado;
+        this.operacion = operacion;
+    }
+
     public float getNum1() {
         return num1;
     }

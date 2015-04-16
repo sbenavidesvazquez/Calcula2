@@ -20,26 +20,25 @@ public class Calculadora2 {
      */
     public static void main(String[] args) {
         
-        Modelo obx=new Modelo();
+        Modelo contenedor=new Modelo();
         
         float n1=Float.parseFloat(JOptionPane.showInputDialog("Número 1"));
-        obx.setNum1(n1);
+        contenedor.setNum1(n1);
         
         float n2=Float.parseFloat(JOptionPane.showInputDialog("Número 2"));
-        obx.setNum2(n2);
+        contenedor.setNum2(n2);
         
         String op=JOptionPane.showInputDialog("Escoge la operacion\n "
                 + "suma +\n"
                 + "resta -\n"
                 + "multiplicación *\n"
                 + "división /\n");
-        obx.setOperacion(op);
+        contenedor.setOperacion(op);
         
-        float res=realizaOperacion(obx.getNum1(),obx.getNum2(),obx.getOperacion());
-        obx.setResultado(res);
+        float res=realizaOperacion(contenedor.getNum1(),contenedor.getNum2(),contenedor.getOperacion());
+        contenedor.setResultado(res);
         
-        
-        imprimir(res);
+        Vista.imprimir(contenedor);
         
     }
     
