@@ -13,9 +13,21 @@ import javax.swing.JOptionPane;
  * @author sbenavidesvazquez
  */
 public class Vista {
-    
+    /**
+     * Imprime la operación.
+     * @param res 
+     */
     public static void imprimir(Modelo res){
         JOptionPane.showMessageDialog(null, res.num1+" "+res.operacion+" "+res.num2+" = "+res.resultado);
     }
     
+    /**
+     * Introduce los valores.
+     * @param mod 
+     */
+    public static void introducir(Modelo mod){
+        mod.getNum1();
+        mod.getNum2();
+        mod.getOperacion();
+    }
 }

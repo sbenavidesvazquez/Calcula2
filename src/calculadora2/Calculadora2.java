@@ -1,9 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package calculadora2;
 
 import static calculadora2.Vista.imprimir;
@@ -22,6 +16,7 @@ public class Calculadora2 {
         
         Modelo contenedor=new Modelo();
         
+        
         float n1=Float.parseFloat(JOptionPane.showInputDialog("Número 1"));
         contenedor.setNum1(n1);
         
@@ -35,13 +30,22 @@ public class Calculadora2 {
                 + "división--> /\n");
         contenedor.setOperacion(op);
         
-        float res=realizaOperacion(contenedor.getNum1(),contenedor.getNum2(),contenedor.getOperacion());
-        contenedor.setResultado(res);
+        
+        Vista.introducir(contenedor);
+        
+        contenedor.setResultado(realizaOperacion(contenedor.getNum1(),contenedor.getNum2(),contenedor.getOperacion()));
         
         Vista.imprimir(contenedor);
         
     }
     
+    /**
+     * 
+     * @param n1
+     * @param n2
+     * @param op
+     * @return 
+     */
     public static float realizaOperacion(float n1,float n2,String op){
 
         
