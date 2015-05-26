@@ -17,17 +17,14 @@ public class Calculadora2 {
         Modelo contenedor=new Modelo();
         
         
-        float n1=Float.parseFloat(JOptionPane.showInputDialog("Número 1"));
+        float n1=0;
         contenedor.setNum1(n1);
         
-        float n2=Float.parseFloat(JOptionPane.showInputDialog("Número 2"));
+        float n2=0;
         contenedor.setNum2(n2);
         
-        String op=JOptionPane.showInputDialog("Escoge la operacion\n "
-                + "suma--> +\n"
-                + "resta--> -\n"
-                + "multiplicación--> *\n"
-                + "división--> /\n");
+        String op="+";
+        
         contenedor.setOperacion(op);
         
         
